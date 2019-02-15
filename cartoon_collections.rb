@@ -13,6 +13,6 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  b = array + cheese_types
-  b.select { |x| b.count(x) > 1 }.uniq.join(" ")
+  a = array & cheese_types
+  a[0]
 end
